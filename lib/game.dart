@@ -13,16 +13,13 @@ class Game {
   int getAnswer(){
     return answer;
   }
-  bool doGuess(int num){
+  int doGuess(int num){
     if (num > answer){
-      print('$num is High');
-      return false;
+      return 1;
     } else if ( num < answer){
-      print('$num is Low');
-      return false;
+      return 2;
     } else{
-      print('$num is Correct');
-      return true;
+      return 3;
     }
   }
 }

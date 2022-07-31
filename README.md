@@ -16,18 +16,3 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 
-void main(){
-int i = 1;
-int j = i++;
-var k; //ctrl+q = type var
-print('hello world');
-print('I = ' + i.toString());
-print('J = $j'); //interpolate
-print('J x 10 = ${j * 10}');
-print('VAR = $k');
-
-var ran = Random();
-var ranN = ran.nextInt(10);
-print('Random Number = $ranN');
-
-}
