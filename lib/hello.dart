@@ -8,10 +8,10 @@ void main() {
   int count = 0;
 
   print('╔══════════════════════════════════════════════════ ');
-  print('║               GUESS THE NUMBERasddddasdasdasdsaddd');
+  print('║               GUESS THE NUMBER');
   print('╟──────────────────────────────────────────────────');
   do {
-    stdout.write('║ Please guess the number between 1 and 100 : ');
+    stdout.write('║ Plea        se guess the number between 1 and 100 : ');
     var input = stdin.readLineSync();
     var guess = int.tryParse(input!); // ! = non-null
 
