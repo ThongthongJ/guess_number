@@ -5,7 +5,7 @@ import 'package:guess_number/game.dart';
 void main() {
   var game = Game();
   var result = 0;
-  int count = 0;
+  int counTT = 0;
 
   print('╔══════════════════════════════════════════════════ ');
   print('║               GUESS THE NUMBER');
@@ -22,14 +22,14 @@ void main() {
     }
 
     result = game.doGuess(guess);
-    count++;
+    counTT++;
 
     if (result == 1) {
       print('║ $guess is too High ▲');
     } else if (result == 2) {
       print('║ $guess is too Low ▼');
     } else if (result == 3) {
-      print('║ $guess is Correct ♥, TOTAL GUESSES : $count');
+      print('║ $guess is Correct ♥, TOTAL GUESSES : $counTT');
     }
 
     print('╟──────────────────────────────────────────────────');
